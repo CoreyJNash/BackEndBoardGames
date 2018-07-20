@@ -1,9 +1,9 @@
-class BoardgamesController < ApplicationController
+class BoardgamesController < ProtectedController
   before_action :set_boardgame, only: [:show, :update, :destroy]
 
   # GET /boardgames
   def index
-    @boardgames = Boardgame.all
+    @boardgames = current_user.boardgames
 
     render json: @boardgames
   end
