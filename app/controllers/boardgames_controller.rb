@@ -15,7 +15,8 @@ class BoardgamesController < ProtectedController
 
   # POST /boardgames
   def create
-    @boardgame = Boardgame.new(boardgame_params)
+    # @boardgame = Boardgame.new(boardgame_params)
+    @boardgame = current_user.boardgames.build(boardgame_params)
 
     if @boardgame.save
       render json: @boardgame, status: :created, location: @boardgame
