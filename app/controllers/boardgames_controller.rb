@@ -1,9 +1,9 @@
-class BoardgamesController < ProtectedController
+class BoardgamesController < OpenReadController
   before_action :set_boardgame, only: [:show, :update, :destroy]
 
   # GET /boardgames
   def index
-    @boardgames = current_user.boardgames
+    @boardgames = Boardgame.all
 
     render json: @boardgames
   end
@@ -47,6 +47,6 @@ class BoardgamesController < ProtectedController
 
     # Only allow a trusted parameter "white list" through.
     def boardgame_params
-      params.require(:boardgame).permit(:name, :genre, :creator, :user_id)
+      params.require(:boardgame).permit(:name, :genre, :creator)
     end
 end
