@@ -47,6 +47,6 @@ class BoardgamesController < OpenReadController
 
     # Only allow a trusted parameter "white list" through.
     def boardgame_params
-      params.require(:boardgame).permit(:name, :genre, :creator)
+      params.require(:boardgame).permit(:name, :genre, :creator, :id)
     end
 end
