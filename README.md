@@ -1,6 +1,10 @@
 WDI-PVD-03 PROJECT #2 - BACKEND RAILS API FOR BOARDGAMES SITE
 ===============================================================
 
+LINK TO FRONT END REPO:
+-----------------------
+https://github.com/CoreyJNash/Boardgames-client
+
 OVERVIEW:
 ----------
 
