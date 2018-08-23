@@ -10,7 +10,8 @@ class BoardgamesController < OpenReadController
 
   # GET /boardgames/1
   def show
-    render json: @boardgame
+    # render json: @boardgame
+    render json: Boardgame.find()
   end
 
   # POST /boardgames
@@ -42,11 +43,13 @@ class BoardgamesController < OpenReadController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_boardgame
-      @boardgame = Boardgame.find(params[:id])
+      # @boardgame = Boardgame.find(params[:id])
+      @boardgame = current_user.boardgames.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
     def boardgame_params
       params.require(:boardgame).permit(:name, :genre, :creator)
     end
+    private :set_boardgame, :boardgame_params
 end
