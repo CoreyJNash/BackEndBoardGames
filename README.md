@@ -5,6 +5,14 @@ LINK TO FRONT END REPO:
 -----------------------
 https://github.com/CoreyJNash/Boardgames-client
 
+LINK TO DEPLOYED BACKEND:
+------------------------
+https://gentle-temple-31740.herokuapp.com/
+
+LINK TO DEPLOYED FRONT END:
+--------------------------
+https://coreyjnash.github.io/Boardgames-client/
+
 OVERVIEW:
 ----------
 
