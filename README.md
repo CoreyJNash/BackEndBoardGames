@@ -53,5 +53,5 @@ For right now the backend is pretty much all set, I have some additions to the f
 
 ERD:
 ------
-[ERD:]https://i.imgur.com/iEzqYHu.png
+![ERD:](https://i.imgur.com/iEzqYHu.png)
 
